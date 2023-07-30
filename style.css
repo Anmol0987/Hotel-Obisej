@@ -1,64 +1,84 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-html,body
-{
-height: 100%;
-width: 100%;
-font-family: "Gilroy";
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Gilroy";
 }
-#main{
+
+#main {
     background-color: rgba(245, 245, 220, 0.702);
 }
-#nav{
+
+#nav {
     height: 80px;
     width: 100%;
     position: fixed;
-    background-color:transparent;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 50px;
     z-index: 99;
 }
-#nav-p1 .line{
+
+#nav-p1 .line {
     height: 2px;
     width: 45px;
     background-color: #434B34;
     margin-bottom: 5px;
 }
-#nav-p2 button{
+
+#nav-p2 button {
     border-radius: 50px;
-    padding:10px 25px;
+    padding: 10px 25px;
     border: 1px solid #434B34;
     color: #434B34;
     margin-right: 10px;
     background-color: transparent;
 }
-#nav-p2 button:nth-last-child(1){
+
+#nav-p2 button:nth-last-child(1) {
     background-color: #434B34;
     color: #fff;
-    
+
 }
-#page1{
+
+#page1 {
     height: 100vh;
     width: 100%;
     position: relative;
-   
+
 }
-#page1 svg{
+
+#page1 svg {
     position: absolute;
     scale: 0.22;
     top: -15%;
     z-index: 99;
     fill: #434B34;
 }
-#page1 img{
+
+#page1 img {
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
-    }
+}
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #5B6647;
+}
+#page2 svg{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
